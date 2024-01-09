@@ -8,6 +8,8 @@ const taskText = todoInput.ariaValueMax.trim();
 
 if(taskText !==''){
     const taskItem = createTaskItem(taskText)
+    todoList.appendChild(taskItem)
+    todoInput.value = '';
 }
 }
 //Create new task items
@@ -32,7 +34,19 @@ const createTaskItem = (taskText) => {
     taskItem.appendChild(deleteBtn)
 
     return taskItem;
-}
+};
 // Delete out tasks
+const deleteTask = () => 
+{
+    const taskItem = event.target.parentNode;
+    todoList.removeChild(taskItem);
+};
+// cross out tasks
+const toggleTask = () =>
+{
+const taskItem = event.target.parentNode;
+taskItem.classList.toggle('completed')
+};
 //Event Listeners
+
 //Examples of task
