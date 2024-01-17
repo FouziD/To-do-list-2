@@ -3,6 +3,10 @@ body
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 20px;
+    background-image: url(IMG/a\ man\ who\ is\ pr\ ceb47688-d8a5-4b3b-a8cf-4b9f9b7cb249.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 h1
